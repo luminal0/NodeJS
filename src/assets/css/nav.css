@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #fff;
+    height: 7vh;
+    display: flex;
+    box-shadow: 0px 0px 15px rgb(50, 50, 50);
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    flex: 50%;
+    padding-left: 90px;
+}
+
+.left a img {
+    width: 75px;
+}
+
+.left ul {
+    list-style: none;
+    margin-left: 40px;
+}
+
+.left ul li {
+    display: inline-block;
+    padding-right: 12px;
+    position: relative;
+}
+
+.left ul li a {
+    color:rgb(50, 50, 50);
+    text-decoration: none;
+}
+
+.left ul li a.active {
+    color: rgb(255, 70, 70);
+    font-weight: 700;
+}
+
+.left ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(50, 50, 50);
+    display: block;
+    transition: 0.15s;
+}
+.left ul li:hover::after{
+    width: 100%;
+}
+
+.right {
+    flex: 50%;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+.right a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    font-size: 15px;
+    padding: 7px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.right a:hover {
+    transition: 0.15s;
+    box-shadow: 0px 0px 10px rgb(50, 50, 50);
+    background: rgb(56, 238, 0);
+}
+
+#barsmenu {
+    display: none;
+  }
+  .hamburger a {
+    color: #000;
+  }
+  
+  .hamburger-nav-container {
+    font-size: 23px;
+    list-style-type: none;
+    display: none;
+  }
+  
+  .hamburger-nav-container a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #9a9a9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  
+  .hamburger-nav-container .hamburger-active {
+    text-decoration: none;
+    color: #fff;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+
+@media only screen and (max-width: 890px) {
+    #barsmenu {
+        display: block;
+    }
+    .item-collapse {
+        display: none;
+    }
+}

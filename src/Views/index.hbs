@@ -1,0 +1,209 @@
+<html>
+
+  <head>
+    <title>Buranyuuu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg bg-body-subtle position-sticky top-0">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/image/logo.png" id="image" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 ms-5 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold active text-danger"
+                aria-current="page"
+                href="/"
+              >Home</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+          </ul>
+
+          <div class="d-flex justify-content-end">
+            <ul class="navbar-nav me-auto mb-2 ms-5 mb-lg-0">
+              {{#if isLogin}}
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-danger active fw-semibold"
+                    href="#"
+                  >Hello, {{user}}</a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a class="nav-link" href="/logout">Logout</a>
+                </li>
+              {{else}}
+                <li class="nav-item">
+                  <a class="nav-link" href="/register">Register</a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a
+                    class="nav-link text-danger active fw-semibold"
+                    href="/login"
+                  >Login</a>
+                </li>
+              {{/if}}
+            </ul>
+            <a class="btn btn-danger btn-submit ms-5" href="/contact-me">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    {{#if messages.success}}
+      <div class="alert alert-success" role="alert">
+        <div class="container">
+          {{messages.success}}
+        </div>
+      </div>
+    {{/if}}
+
+    <!-- Container -->
+    <div
+      class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-black"
+      style="
+      "
+    >
+      <section class="d-flex justify-content-center">
+        <div
+          class="h-100 d-flex justify-content-center align-items-center bg-light rounded p-5 shadow-lg"
+          style="width: 80%; "
+        >
+          <div class="card-body">
+            <h4 class="card-title text-start mb-5">Welcome to My Profile</h4>
+            <p class="card-text text-start">
+              I'm like a cat on a sugar rush, a splash of rainbow energy, and a
+              sprinkle of chaos all rolled into one! 🐾 When I'm not plotting
+              world domination with my yarn ball army, I enjoy chasing laser
+              pointers and napping in the sunbeams. Join me on my adventures as
+              we explore the realm of curiosity and playfulness together!
+            </p>
+            <div class="d-flex text-start mt-4">
+              <a class="btn btn-primary d-flex me-4" href="#">Contact</a>
+              <a id="donlodcv">
+                Download CV
+                <i class="fa-solid fa-download"></i></a>
+            </div>
+            <div>
+              <div class="d-flex text-start mt-5">
+                <a href="https://www.linkedin.com/in/satriocomanazizi/">
+                  <i
+                    class="fa-brands fa-linkedin-in fa-2xl"
+                    style="margin-left: 15px; color: black"
+                  ></i>
+                </a>
+                <a
+                  href="https://www.facebook.com/100091642425842/videos/1440120750082249"
+                >
+                  <i
+                    class="fa-brands fa-facebook-f fa-2xl"
+                    style="margin-left: 15px; color: black"
+                  ></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                  <i
+                    class="fa-brands fa-instagram fa-2xl"
+                    style="margin-left: 15px; color: black"
+                  ></i>
+                </a>
+                <a href="https://twitter.com/home">
+                  <i
+                    class="fa-brands fa-twitter fa-2xl"
+                    style="margin-left: 15px; color: black"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow rounded p-3" style="max-width: 540px">
+            <div class="">
+              <img
+                src="image\ff175dramjo91.gif"
+                class="img-fluid rounded"
+                alt=""
+              />
+              <p class="">Satrio Coman Azizi</p>
+              <p class="">Fullstack Beginner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Blog Post -->
+    <div class="text-center mb-5">
+      <h2>MY BLOGS</h2>
+    </div>
+    <div class="d-flex justify-content-center px-5 text-bg-white">
+      <div class="row row-cols-1 row-cols-md-4 g-4 p-5" style="width: 80%;">
+        {{#each data}}
+          <div class="col">
+            <div class="card h-100">
+              <img src="{{this.image}}" class="card-img-top p-3" alt="..." />
+              <div class="card-body">
+                <a class="text-decoration-none" href="/blog-content/{{@index}}">
+                  <h5 class="card-title">{{this.title}}</h5>
+                </a>
+                <p class="card-textl text-dark">{{this.content}}</p>
+              </div>
+              <div class="ms-3">
+                <i class="fa-brands fa-google-play" style="color: #000000;"></i>
+                <i class="fa-brands fa-android" style="color: #000000;"></i>
+                <i class="fa-brands fa-java" style="color: #000000;"></i>
+              </div>
+              <div class="d-flex justify-content-center my-4">
+                <a class="btn btn-dark me-3" href="/edit/{{this.id}}">Edit</a>
+                <a class="btn btn-dark" href="/delete-blog/{{this.id}}">Delete</a>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">{{this.postedAt}}</small>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+        <script>
+          const currentPage = window.location.pathname.split("/").pop(); const
+          hamburgerLinks = document.querySelectorAll(".hamburger-link");
+          hamburgerLinks.forEach((link) => { if (link.getAttribute("href") ===
+          currentPage) { link.classList.add("hamburger-active"); } });
+        </script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+          crossorigin="anonymous"
+        ></script>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+.first-layer {
+    background-color: #fff;
+    width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px 50px;
+    box-shadow: 0px 0px 25px rgb(50, 50, 50);
+    border-radius: 20px;
+}
+
+.former div {
+    margin-bottom:20px ;
+}
+
+.former div label {
+    color:rgb(50, 50, 50);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.former div input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.former div select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.former div textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+    resize: none;
+    height: 100px;
+}
+
+.former button {
+    background-color: #ec4437;
+    color: white;
+    border: 1px solid #ec4437;
+    padding: 8px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.former button:hover {
+    transition: 0.15s;
+    border: 1px solid #ec4437;
+    background-color: #fff;
+    color: #ec4437;
+}

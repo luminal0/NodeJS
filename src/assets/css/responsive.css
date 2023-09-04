@@ -1,0 +1,75 @@
+@media only screen and (max-width: 1200px) {
+    .project-card {
+      flex-basis: calc(33.33% - 25px);
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .project-card {
+      flex-basis: calc(50% - 25px);
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .portofolio {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .portofolio .right {
+      margin: 0 auto;
+    }
+  
+    .navbar {
+      padding: 10px 30px;
+    }
+  
+    .portofolio .left {
+      order: 2;
+    }
+  
+    .portofolio .right {
+      order: 1;
+    }
+  
+    .project-detail .top .project-image {
+      flex-basis: 100%;
+    }
+  
+    .project-detail .top .project-attr {
+      flex-basis: 100%;
+    }
+  
+    .project-detail .top .project-attr .project-technologies div {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .project-card {
+      flex-basis: calc(100% - 25px);
+    }
+  
+    .item-collapse {
+      display: none;
+    }
+  
+    #barsmenu {
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .portofolio .right {
+      max-width: 200px;
+      justify-content: center;
+    }
+  
+    .input-container .checkbox-container {
+      display: block;
+    }
+  
+    .input-container .checkbox-container-inner {
+      margin-bottom: 5px;
+    }
+  }

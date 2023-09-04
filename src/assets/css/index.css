@@ -1,0 +1,155 @@
+body {
+    background-image:url(https://ik.imagekit.io/MichellaG/IMG_20190620_230439.jpg?updatedAt=1691612380609);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.division {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+section {
+display: flex;
+  background-color: white;
+  margin: 40px;
+  width: 70%;
+  padding: 90px;
+  border: 1px solid black;
+  border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(79, 79, 79);
+}
+.first-container {
+    flex: 70%;
+    margin-right: 80px;
+    margin-top: 40px;
+  }
+  .first-container #hi {
+    font-size: 36px;
+  }
+  .first-container p {
+    font-size: 26px;
+    text-align: justify;
+  }
+  .first-container button {
+    width: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    margin-right: 40px;
+    font-size: 26px;
+  }
+  .first-container a {
+    text-decoration: none;
+    color: black;
+  }
+  .container {
+    margin-top: 120px;
+  }
+  
+.container a {
+    margin-left: 15px; color: black;
+}
+
+.second-container {
+    flex: 30%;
+    background-color: white;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 15px;
+    justify-content: center;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+  }
+.second-container img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+.second-container #nama {
+    font-size: 38px;
+    text-align: center;
+  }
+.second-container #decs {
+    text-align: center;
+    margin-top: 0px;
+  }
+
+@media only screen and (max-width: 900px) {
+section{
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .first-container {
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    .container{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+section {
+    flex-direction: column;
+    align-items: center;
+    width: 69%;
+    padding: 40px;
+}
+  
+.first-container {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+      
+.first-container #hi {
+    font-size: 20px;
+  }
+  .first-container p {
+    font-size: 14px;
+    text-align: justify;
+  }
+  .first-container button {
+    width: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 14px;
+  }
+  .first-container #downloadcv {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  .first-container .container {
+    margin: 30px 30px;
+  }
+  .first-container .container a {
+    font-size: 14px;
+  }
+
+  .second-container {
+    width: 90%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    justify-content: center;
+    box-shadow: 0 0 8px black;
+    padding: 10px;
+  }
+  .second-container img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .second-container p {
+    font-size: 18px;
+  }
+  .second-container #nama {
+    font-size: 28px;
+    text-align: center;
+  }
+}

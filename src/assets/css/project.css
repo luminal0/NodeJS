@@ -1,0 +1,263 @@
+/* Form Project */
+.project-content {
+  margin: 0 auto;
+}
+
+.myProject-form {
+  background-color: #dbdbdb;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.myProject-form .form-container {
+  width: 500px;
+}
+
+.myProject-form .form-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.myProject-form form label {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.myProject-form form {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #dbdbdb;
+  border: none;
+  border-radius: 8px;
+}
+
+.myProject-form .input-title input {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+.myProject-form .project-date {
+  display: flex;
+}
+
+.myProject-form .project-date label {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.myProject-form .project-date .start-date {
+  flex: 50%;
+}
+
+.myProject-form .project-date .start-date input {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+.myProject-form .project-date .end-date {
+  flex: 50%;
+  margin-left: 10px;
+}
+
+.myProject-form .project-date .end-date input {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+
+.myProject-form form textarea {
+  height: 150px;
+  resize: none;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+.myProject-form .form-container .category {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.myProject-form .form-container .category .cate-left {
+  display: flex;
+}
+
+.myProject-form .form-container .category .cate-right {
+  display: flex;
+}
+
+.myProject-form .form-container .category .chk-left {
+  flex: 50%;
+}
+
+.myProject-form .form-container .category .chk-right {
+  flex: 50%;
+}
+
+.myProject-form form .input-project-image-group {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.myProject-form form .input-project-image-group label div p {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myProject-form form .input-project-image-group label div {
+  width: 20%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #dbdbdb;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.myProject-form form .input-project-image-group label {
+  width: 95%;
+  padding-right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.myProject-form form .button-group {
+  text-align: right;
+}
+
+.myProject-form form button {
+  padding: 8px 25px;
+  font-size: 17px;
+  background: #ec4d37;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.project-content {
+  width: 90%;
+}
+
+.project-content h1 {
+  text-align: center;
+}
+
+.project-content .container-card {
+  width: 300px;
+  height: 550px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px;
+  border-style: none;
+}
+
+.project-content .container-card .card-content {
+  margin: auto;
+  padding: 8px;
+  border-radius: 8px;
+  
+}
+
+.project-content .container-card .card-content img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.project-content .container-card .card-content h1 {
+  text-align: left;
+  font-size: 15px;
+}
+
+#container-desc {
+  width: 100%; /* Sesuaikan dengan lebar kontainer Anda */
+  display: -webkit-box; /* Mendukung Safari dan Chrome */
+  -webkit-line-clamp: 4; /* Batasan jumlah baris yang akan ditampilkan */
+  -webkit-box-orient: vertical; /* Mengatur orientasi kotak */
+  overflow: hidden; /* Mengatur overflow menjadi tersembunyi */
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+#container-desc::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to right, ellipsis, white 50%);
+  width: 100%;
+  height: 1.5em; /* Tinggi gradien */
+}
+
+
+.project-content .container-card .card-content div i {
+  margin: 10px 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.project-content .container-card .card-content div i:hover {
+  color: orangered;
+}
+
+
+.project-content .container-card .card-content .ctn-btn button:hover {
+  background-color: black;
+}
+
+.project-content .card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+}
